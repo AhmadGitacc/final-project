@@ -1,0 +1,73 @@
+#paymentForm {
+    width:auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #1e1c1c; 
+    color: white;
+}
+
+.form_grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="email"],
+input[type="tel"],
+input[type="text"] {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-submit button {
+    width: 50%;
+    padding: 10px;
+    background-color: yellowgreen;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-submit button:hover {
+    background-color: #0056b3;
+}
+
+
+.button {
+    display: none;
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Style the button on hover */
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Style the emoji */
+/* .button::after {
+    content: '\1F6E2'; 
+    margin-left: 5px;
+    font-size: 18px;
+} */

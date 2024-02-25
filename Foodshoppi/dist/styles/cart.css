@@ -1,0 +1,109 @@
+.cart_container {
+    cursor: pointer;
+    display: none;
+    padding: 10px;
+    margin-top: 15px;
+    margin-left: -360px;
+    height: auto;
+    /* background-color: #edf0eb; */
+    background-color: white;
+    /* background-image: url(/dist/resources/checkout.gif);
+    background-repeat: no-repeat;
+    background-position: center; */
+    position: absolute;
+    border: 1px solid crimson;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.cart_head {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.cart_head h3 {
+    font-size: 20px;
+    color: crimson;
+}
+
+.cart_head span {
+    color: red;
+    transition: 500ms;
+}
+
+.cart_head span:hover {
+    color: white;
+    background-color: red;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.cart_item {
+    background-color: #303030;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;border-radius: 3px;
+    border: .5px solid #800080;
+    padding: 15px;
+    padding-left: 5px;
+}
+
+.cart_item img {
+    width: 70px;
+    height: 50px;
+    border-radius: 0;
+    border: 1px solid rgb(168, 165, 165);
+}
+
+.cart_item input {
+    width: 50px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid gainsboro;
+    text-align: center;
+    padding-left: 10px;
+}
+
+.cart_item div{
+    width: 130px;
+}
+
+.cart_remove {
+    color: white;
+    background-color: transparent;
+    border-radius: 50%;
+    font-size: 15px;
+    transition: 300ms;
+}
+.cart_remove:hover {
+    border: 2px solid white;
+    font-size: 18px;
+    outline: none;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+#checkout {
+    float: right;
+    color: white;
+    background-color: crimson;
+    box-shadow: 3px 3px 1px 0 #80008069;
+    font-size: 15px;
+    padding: 18px;
+    transition: 300ms;
+}
+#checkout:hover{
+    padding: 20px;
+}

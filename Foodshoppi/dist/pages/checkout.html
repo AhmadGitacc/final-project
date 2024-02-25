@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="/dist/styles/checkout.css">
+    <link rel="stylesheet" href="/dist/styles/payment.css">
+</head>
+
+<body>
+
+    <div class="head">
+
+        <a href="/dist/pages/food_options.html">
+            <h1 class="logo">
+              <img src="/dist/resources/1708612987481.png" alt="">
+              <b>FOOD<span style="color: crimson;">SHOPPI</span></b>
+            </h1>
+          </a>
+
+    </div>
+
+    <!-- <center><img src="/dist/resources/checkout.gif" alt="thanks" class="page_img"></center> -->
+
+    <section class="page_body">
+
+        <h1 class="title"><b>Checkout</b></h1>
+
+        <h2><b>Selected items</b></h2>
+        <div class="selected">
+            <ol class="my_cart">
+                <li><span>food name</span>||<span>N: food price</span>||<span>quantity portions</span></li>
+            </ol>
+
+            <span>Total</span>
+            <span>N: <strong><span class="total_bill">500</span></strong></span><br>
+        </div>
+
+
+        <div class="page_bottom">
+            <div>
+                <h2><b>Payment/Delivery details</b></h2>
+
+                <!-- <div class="d_option2">
+                    <b>💵 choose a payment method</b>
+                    <p>Only available payment is method: <b>Paystack</b><input type="checkbox" checked></p> -->
+            </div>
+        </div>
+
+        <form id="paymentForm">
+            <div class="form_grid">
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" required />
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" required />
+                </div>
+                <div class="form-group">
+                    <label for="delivery name">Phone </label>
+                    <input type="tel" id="delivery_phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="delivery name">Name on Delivery</label>
+                    <input type="text" id="delivery_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="delivery name">Delivery Address</label>
+                    <input type="text" id="delivery_add" required>
+                </div>
+                <div class="form-group">
+                    <label for="amount">Amount</label>
+                    <input type="tel" id="amount" required readonly />
+                </div>
+            </div>
+            <center>
+                <br><br>
+                <div class="form-submit">
+                    <button type="submit" onclick="payWithPaystack()" class="pay_button" id="complete">Complete Payment</button>
+                </div>
+            </center>
+        </form>
+
+    </section>
+</body>
+
+<script src="https://js.paystack.co/v1/inline.js"></script>
+
+<script src="/dist/bundle.js"></script>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in as a Partner</title>
+    <link rel="stylesheet" href="../styles/partner_signin.css">
+</head>
+<body>
+
+   <a href="/dist/pages/index.html">
+      <h1 class="logo">
+        <img src="/dist/resources/1708612987481.png" alt="">
+        <b>FOOD<span style="color: crimson;">SHOPPI</span></b>
+      </h1>
+    </a>
+    
+
+    <section class="form">
+        <div class="wrapper">
+            <div class="title-text">
+               <div class="title login">
+                 Vendor login 
+               </div>
+               <div class="title signup">
+                  Vendor Sign up
+               </div>
+            </div>
+            <div class="form-container">
+               <div class="slide-controls">
+                  <input type="radio" name="slide" id="login" checked>
+                  <input type="radio" name="slide" id="signup">
+                  <label for="login" class="slide login">Login</label>
+                  <label for="signup" class="slide signup">Sign up</label>
+                  <div class="slider-tab"></div>
+               </div>
+               <div class="form-inner">
+                  <form action="#" class="login"id="vendor_login">
+                     
+                     <div class="field">
+                        <input type="text" placeholder="Email Address" name="shop_email" required>
+                     </div>
+                     <div class="field">
+                        <input type="password" placeholder="Password" name="shop_password" required>
+                     </div>
+
+                     <div class="field" style="display: none;" id="error_field">
+                        <input type="text" value="" readonly name="login_error" style="color: red; font-size: 14px;">
+                    </div>
+
+                     <div class="field btn">
+                        <div class="btn-layer"></div>
+                        <input type="submit" value="Login">
+                     </div>
+
+                     <div class="signup-link">
+                        Don't have an account? <a href="">Go to sign up</a>
+                     </div>
+                  </form>
+                  <form class="signup" id="vendor_sign">
+                     <div class="field">
+                        <input type="text" placeholder="Shop Name" name="shop_name" required>
+                     </div>
+                     <div class="field">
+                        <textarea name="shop_add" id="" cols="43" rows="3" placeholder="Address/Location"></textarea>
+                     </div>
+                     <div class="field">
+                        <input type="text" placeholder="Shop Owner's Name" name="shop_owner" required>
+                     </div>
+                     <div class="field">
+                        <input type="number" placeholder="Phone Number" name="shop_phone" required>
+                     </div>
+                     <div class="field">
+                        <input type="text" placeholder="Email Address" name="shop_email" required>
+                     </div>
+                     <div class="field">
+                        <input type="password" placeholder="Password" name="shop_password" required>
+                     </div>
+
+                     <div class="field" style="display: none;" id="error_field2">
+                        <input type="text" value="" readonly name="login_error" style="color: red; font-size: 14px;">
+                    </div>
+
+                     <div class="field btn">
+                        <div class="btn-layer"></div>
+                        <input type="submit" value="Signup">
+                     </div>
+
+                     <div class="signup-link">
+                        Already have an account? <a href="">Go to login</a>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+    </section>
+
+    <script src="../bundle.js"></script>
+     <script>
+        const loginText = document.querySelector(".title-text .login");
+        const loginForm = document.querySelector("form.login");
+        const loginBtn = document.querySelector("label.login");
+        const signupBtn = document.querySelector("label.signup");
+        const signupLink = document.querySelector("form .signup-link a");
+        signupBtn.onclick = (()=>{
+          loginForm.style.marginLeft = "-50%";
+          loginText.style.marginLeft = "-50%";
+        });
+        loginBtn.onclick = (()=>{
+          loginForm.style.marginLeft = "0%";
+          loginText.style.marginLeft = "0%";
+        });
+        signupLink.onclick = (()=>{
+          signupBtn.click();
+          return false;
+        });
+     </script>
+    
+</body>
+</html>

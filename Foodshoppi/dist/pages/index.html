@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/modal.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="head">
+        <h1 class="logo">
+            <img src="/dist/resources/1708612987481.png" alt="">
+            <b>FOOD<span style="color: crimson;">SHOPPI</span></b>
+        </h1>
+
+        <div>
+            <button class="button user_signup" id="four">Start Shopping</button>
+        </div>
+    </div>
+
+    <div id="modal-container">
+        <div class="modal-background">
+            <div class="modal">
+                <section class="form">
+                    <div class="wrapper">
+                        <div class="title-text">
+                            <div class="title login">
+                                Continue Shopping
+                            </div>
+                            <div class="title signup">
+                                Start Shopping
+                            </div>
+                        </div>
+                        <div class="form-container">
+                            <div class="slide-controls">
+                                <input type="radio" name="slide" id="login" checked>
+                                <input type="radio" name="slide" id="signup">
+                                <label for="login" class="slide login">Login</label>
+                                <label for="signup" class="slide signup">Sign up</label>
+                                <div class="slider-tab"></div>
+                            </div>
+                            <div class="form-inner">
+                                <form action="#" class="login" id="user_login">
+                                    <div class="field">
+                                        <input type="email" placeholder="Email Address" name="user_email" required>
+                                    </div>
+                                    <div class="field">
+                                        <input type="password" placeholder="Password" name="user_password" required>
+                                    </div>
+
+                                    <div class="field" style="display: none;" id="error_field">
+                                        <input type="text" value="" readonly name="login_error" style="color: red; font-size: 14px;">
+                                    </div>
+
+                                    <div class="field btn">
+                                        <div class="btn-layer"></div>
+                                        <input type="submit" value="Login">
+                                    </div>
+
+                                </form>
+
+                                <form action="#" class="signup" id="user_signup">
+                                    <div class="field">
+                                        <input type="text" placeholder="Fullname" name="user_name" required>
+                                    </div>
+                                    <div class="field">
+                                        <input type="text" placeholder="Email Address" name="user_email" required>
+                                    </div>
+                                    <div class="field">
+                                        <input type="password" placeholder="Password" name="user_password" required>
+                                    </div>
+
+                                    <div class="field" style="display: none;" id="error_field2">
+                                        <input type="text" value="" readonly name="login_error" style="color: red; font-size: 14px;">
+                                    </div>
+
+                                    <div class="field btn">
+                                        <div class="btn-layer"></div>
+                                        <input type="submit" value="Sign up">
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="start">
+        <h1 class="hero">
+            <div>
+                <h1 style="color: crimson;">Welcome to FoodShoppi</h1>
+                <b>The quickest way to <br> find the perfect bite</b>
+            </div>
+
+            <div class="img_box">
+                <img src="/dist/resources/shawarma-removebg-preview.png" class="foods">
+            </div>
+        </h1>
+    </div>
+
+    
+
+    <!-- BODY SECTION -->
+    <section class="page_body">
+
+        <div>
+            <p>How It Works</p>
+
+            <div class="body_images">
+
+                <div class="body_info">
+                    <img src="/dist/resources/Clickhere.gif" alt="body image" class="body_image"><br>
+                    <b>Step1</b><br>
+                    <span>Click on start shopping to sign up with your information</span>
+                </div>
+
+                <div class="body_info">
+                    <img src="/dist/resources/Orderfood.gif" alt="place order" class="body_image"><br>
+                    <b>Step2</b><br>
+                    <span>Now add a menu item to your cart and you're almost there</span>
+                </div>
+
+                <div class="body_info">
+                    <img src="/dist/resources/Eatingfood.gif" alt="body image" class="body_image"><br>
+                    <b>Step3</b><br>
+                    <span>Then checkout your order and enjoy your meal 😋</span>
+                </div>
+            </div>
+        </div>
+
+        <p>Work with FoodShoppi</p>
+
+        <div class="work_info">
+            <img src="/dist/resources/Deliveryman.gif" alt="ride image" class="work_image">
+            <div>
+                <h1><b>As a rider</b></h1>
+                <span>Earn money by delivering food from vendors.
+                    All you need are the skills and a bike</span><br><br>
+                <button id="partnerBtn"><b>Ride with us</b></button>
+            </div>
+        </div>
+        <div class="work_info">
+            <div>
+                <h1><b>As a vendor</b></h1>
+                <span>FoodShoppi helps small food spots grow by improving ther online presence</span><br><br>
+                <button id="partnerBtn2"><b>Partner with us</b></button>
+            </div>
+            <img src="/dist/resources/StreetFood.gif" alt="ride image" class="work_image">
+        </div>
+        <div class="work_info">
+            <img src="/dist/resources/partner.gif" alt="ride image" class="work_image">
+            <div>
+                <h1><b>As a colleague</b></h1>
+                <span>Be part of a team that's buliding a top notch feeding service</span><br><br>
+                <button onclick="alert('Coming Soon')"><b>Work with us</b></button>
+            </div>
+        </div>
+
+        <!-- <p>Download our app</p>
+
+        <div class="work_info">
+                <h1><b>As a colleague</b></h1>
+                <span>Be part of a team that's buliding a top notch delivery service</span><br><br>
+                <button><b>Work with us</b></button>
+        </div> -->
+
+
+    </section>
+</body>
+
+
+<script src="../JS/modal.js"></script>
+<script src="../bundle.js"></script>
+<script>
+    const loginText = document.querySelector(".title-text .login");
+    const loginForm = document.querySelector("form.login");
+    const loginBtn = document.querySelector("label.login");
+    const signupBtn = document.querySelector("label.signup");
+    const signupLink = document.querySelector("form .signup-link a");
+    signupBtn.onclick = (() => {
+        loginForm.style.marginLeft = "-50%";
+        loginText.style.marginLeft = "-50%";
+    });
+    loginBtn.onclick = (() => {
+        loginForm.style.marginLeft = "0%";
+        loginText.style.marginLeft = "0%";
+    });
+    signupLink.onclick = (() => {
+        signupBtn.click();
+        return false;
+    });
+</script>
+
+
+<footer class="footer-distributed">
+
+    <div class="footer-left">
+
+        <img src="/dist/resources/1708612987481.png" alt="FoodShoppi logo">
+        <h3>Food<span>Shoppi</span></h3>
+
+        <p class="footer-links">
+            <a href="/dist/pages/index.html" class="link-1">Home</a>
+
+        </p>
+
+        <p class="footer-company-name">FoodShoppi © 2024</p>
+    </div>
+
+    <div class="footer-center">
+
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>26 St. Navy Ave</span> Karshi, Abuja</p>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+234 812 091 5433</p>
+        </div>
+
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:support@company.com">fooshoppi@company.com</a></p>
+        </div>
+
+    </div>
+
+    <div class="footer-right">
+
+        <p class="footer-company-about">
+            <span>About FoodShoppi</span>
+            FOOD SHOPPI is a platform created to bridge the gap as well as streamline the process of ordering and
+            getting fresh delicious foood from the comfort of your home.
+        </p>
+
+        <div class="footer-icons">
+
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+</html>

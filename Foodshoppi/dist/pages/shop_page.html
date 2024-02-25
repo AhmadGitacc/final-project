@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Page</title>
+    <link rel="stylesheet" href="../styles/shop_page.css">
+</head>
+
+<body>
+
+    <a href="/dist/pages/index.html">
+        <h1 class="logo">
+          <img src="/dist/resources/1708612987481.png" alt="">
+          <b>FOOD<span style="color: crimson;">SHOPPI</span></b>
+        </h1>
+      </a>
+    
+    
+    <section class="page_body">
+        
+        <details>
+            <summary>
+                <h1><span>Welcome </span><span class="shop_name"> ShopName</span> to your vendor page</h1>
+            </summary>
+            <hr>
+            <button class="menu_btn" id="rider_area">My riders</button>
+            <br>
+            <hr>
+            <button class="logout_btn menu_btn">LogOut</button>
+            <br>
+            <hr>
+            <br>
+        </details>
+        <!-- <img class="page_body_img" src="/dist/resources/Cooking.gif" alt="shop banner"> -->
+
+
+        <p>Pending Orders</p>
+
+        <div class="order_table">
+            <table>
+                <thead>
+                    <td><b>Customer Info. </b></td>
+                    <td><b>Ordered Dish</b></td>
+                    <td><b>Quantity</b></td>
+                </thead>
+                <tbody class="my_orders">
+                    <tr>
+                        <td>name , from: address , phone: number</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td><button><b>done</b></button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <p>Available Dishes</p>
+
+        <div class="work_info">
+
+            <div class="saved_dish">
+                <div>
+                    <h1><b>Dishes not yet available</b></h1>
+                    <hr>
+                    <span>Add a new dish above. Or check your internet <br>connection
+                        if you already have existing dishes</span>
+                    <hr>
+                    <b>
+                        <h4>#000.00</h4>
+                    </b>
+                </div>
+                <img src="puffs.jpg" alt="ride image">
+
+                <div>
+                    <input type="submit" class="crudbtn" value="Delete">
+                    <button class="crudbtn">Edit</button>
+                </div>
+                <input type="hidden" value=>
+            </div>
+
+        </div>
+
+
+        <!--Adding new dish -->
+        <p>Add a new dish</p>
+        <form class="add_info">
+
+            <div>
+                <h1><b><input required type="text" name="dish_name" placeholder="Dish name"></b></h1>
+                <span><textarea required name="dish_desc" cols="30" rows="3"
+                        placeholder="Brief dish description"></textarea></span>
+                <h5><input required name="dish_price" type="number" placeholder="#1250"></h5>
+            </div>
+
+            <div>
+                <img id="pre_img" alt="UPLOAD AN IMAGE OF THE DISH">
+                <input type="file" id="img_input" placeholder="Dish image" required>
+            </div>
+
+            <div>
+                <button class="crudbtn">Save Dish</button>
+            </div>
+
+        </form>
+
+
+
+        <!-- editing dish info -->
+        <div class="edit_dish" style="display: none;" id="editDish">
+
+            <p>Edit an existing dish</p>
+            <form class="edit_info">
+
+                <div>
+                    <h1><b><input required type="text" name="dish_name" placeholder="Dish name"></b></h1>
+                    <span><textarea required name="dish_desc" cols="30" rows="3"
+                            placeholder="Brief dish description"></textarea></span>
+                    <h5><input required name="dish_price" type="number" placeholder="#1250"></h5>
+                </div>
+
+                <div>
+                    <img id="pre_img" alt="UPLOAD AN IMAGE OF THE DISH">
+                    <input type="file" id="img_input" placeholder="Dish image">
+                </div>
+
+                <div>
+                    <button class="crudbtn">Update Dish</button>
+                </div>
+
+            </form>
+
+        </div>
+        <br><br>
+
+        <p>My riders</p>
+        <div class="rider_info">
+            <form class="rider_form" id="rider_sign">
+
+                <h1>Add a rider</h1>
+
+                <div class="field">
+                    <input type="text" placeholder="full name" name="rider_name" required>
+                </div>
+                <div class="field">
+                    <input type="text" placeholder="NIN" name="rider_nin" required>
+                </div>
+                <div class="field">
+                    <input type="number" placeholder="phone number" name="rider_phone" required>
+                </div>
+                <div class="field">
+                    <input type="text" placeholder="vehicle model" name="rider_bike" required>
+                </div>
+                <div class="field">
+                    <input type="text" placeholder="plate number" name="rider_plate" required>
+                </div>
+                <div class="field">
+                    <input type="email" placeholder="email" name="rider_email" required>
+                </div>
+
+                <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input type="submit" value="Register rider" class="rider_form_btn">
+                </div>
+
+            </form>
+
+            <div class="order_table">
+                <table>
+                    <thead>
+                        <td><b>rider name</b></td>
+                        <td><b>phone no. </b></td>
+                        <td><b>nin</b></td>
+                        <td><b>plate no.</b></td>
+                    </thead>
+                    <tbody class="my_riders">
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script>
+        let file = document.querySelector('#img_input')
+        let imgPreview = document.querySelector('#pre_img')
+
+        file.addEventListener("change", (e) => {
+            imgPreview.src = URL.createObjectURL(e.target.files[0])
+        })
+
+    </script>
+
+    <script src="../bundle.js"></script>
+</body>
+
+</html>

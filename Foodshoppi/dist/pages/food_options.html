@@ -1,0 +1,329 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordering Page</title>
+    <link rel="stylesheet" href="../styles/food_options.css">
+    <link rel="stylesheet" href="../styles/cart.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="head">
+        <a href="/dist/pages/index.html">
+            <h1 class="logo">
+              <b style="color: white;">FOOD<span style="color: crimson;">SHOPPI</span></b>
+            </h1>
+          </a>
+        <div class="menu">
+            <div>
+                <button aria-details="double click to close" class="open_cart"><svg width="20" height="20"
+                        viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <style>
+                            .line-cart1 {
+                                animation: line-cart1-arrow 1s infinite;
+                            }
+
+                            @keyframes line-cart1-arrow {
+                                0% {
+                                    transform: translate3d(0, -4px, 0);
+                                }
+
+                                50% {
+                                    transform: translate3d(0, 0, 0);
+                                }
+
+                                100% {
+                                    transform: translate3d(0, -4px, 0);
+                                }
+                            }
+
+                            @media (prefers-reduced-motion: reduce) {
+                                .line-cart1 {
+                                    animation: none;
+                                }
+                            }
+                        </style>
+                        <path class="stroke1"
+                            d="M7 9.7793H21.027L22.9752 23.8063M70.9009 23.8063H93.5L84.9279 65.8874H28.8198L22.9752 23.8063M22.9752 23.8063H42.8468"
+                            stroke="rgba(255,255,255,1)" stroke-width="4.0px" style="animation-duration: 1s;"></path>
+                        <path class="line-cart1 stroke2"
+                            d="M56.8739 9V50.3018M56.8739 50.3018L45.1847 38.6126M56.8739 50.3018L68.5631 38.6126"
+                            stroke="rgba(255,255,255,1)" stroke-width="4.0px" stroke-linecap="round"
+                            style="animation-duration: 1s;"></path>
+                        <circle class="stroke1 fill1" cx="32.7162" cy="82.1487" r="8.57207" fill="rgba(167,246,255,1)"
+                            stroke="rgba(255,255,255,1)" stroke-width="4.0px" style="animation-duration: 1s;"></circle>
+                        <circle class="stroke1 fill1" cx="84.1486" cy="82.1487" r="8.57207" fill="rgba(167,246,255,1)"
+                            stroke="rgba(255,255,255,1)" stroke-width="4.0px" style="animation-duration: 1s;"></circle>
+                    </svg>
+                </button>
+
+                <div class="cart_container">
+                    <div class="cart_head">
+                        <h3>My Cart</h3>
+                        <span>Remove all</span>
+                    </div>
+
+                    <div class="items">
+                        <div class="cart_item">
+                            <button class="cart_remove">✖</button>
+                            <img src="puffs.jpg"><br>
+
+                            <div>
+                                <span>Assorted puff puff</span><br>
+                                <b>N 5000</b>
+                            </div>
+
+                            <input id="quantity" type="number" min="1" value="1">
+
+                        </div>
+                    </div>
+
+                    <div class="checkout">
+                        <button id="checkout"><b>Proceed to checkout</b></button>
+                    </div>
+
+                </div>
+            </div>
+            <details>
+                <summary>
+                    <span><b>Hello </b></span>
+                    <span id="userName"> </span>
+                    <span id="userImg"></span>
+                </summary>
+                <hr>
+                <button id="logoutBtn" class="logoutBtn">Logout</button>
+                <hr>
+            </details>
+        </div>
+
+    </div>
+
+    <h1 class="hero">
+
+        <div>
+            <span style="color: crimson;">Hungry?</span>
+            <br>
+            <b>The perfect bite awaits</b><br>
+        </div>
+
+        <img src="/dist/resources/1708612987481.png" alt="">
+
+    </h1>
+
+    <section class="page-body">
+
+
+        <div class="food_section">
+            <a href="#new"><button class="category_button">Most recent</button></a>
+            <a href="#a_z"><button class="category_button">A - Z</button></a>
+            <a href="#"><button class="category_button">5 stars</button></a>
+            <b id="new"></b>
+            <br><br>
+
+            <p>New on FoodShoppi</p>
+
+            <div class="food-container">
+                <div class="food-card">
+                    <img src="puffs.jpg" alt="food image">
+                    <br><br>
+                    <b>Iya Sikirat Joint</b>
+                    <br>
+                    <span>Breakfast, lunch</span>
+                    <br><br>
+                    <div>
+                        <span>🛵 💲500</span>
+                        <input type="submit" class="cart_btn" value="+ add to cart">
+                    </div>
+
+                    <br><br>
+
+                </div>
+                <div class="food-card">
+                    <img src="puffs.jpg" alt="food image">
+                    <br><br>
+                    <b>Iya Sikirat Joint</b>
+                    <br>
+                    <span>Breakfast, lunch</span>
+                    <br><br>
+                    <div>
+                        <span>🛵 💲500</span>
+                        <input type="submit" class="cart_btn" value="+ add to cart">
+                    </div>
+
+                    <br><br>
+
+                </div>
+                <div class="food-card">
+                    <img src="puffs.jpg" alt="food image">
+                    <br><br>
+                    <b>Iya Sikirat Joint</b>
+                    <br>
+                    <span>Breakfast, lunch</span>
+                    <br><br>
+                    <div>
+                        <span>🛵 💲500</span>
+                        <input type="submit" class="cart_btn" value="+ add to cart">
+                    </div>
+
+                    <br><br>
+
+                </div>
+                <div class="food-card">
+                    <img src="puffs.jpg" alt="food image">
+                    <br><br>
+                    <b>Iya Sikirat Joint</b>
+                    <br>
+                    <span>Breakfast, lunch</span>
+                    <br><br>
+                    <div>
+                        <span>🛵 💲500</span>
+                        <input type="submit" class="cart_btn" value="+ add to cart">
+                    </div>
+
+                    <br><br>
+
+                </div>
+                
+            </div>
+        </div>
+
+
+
+        <div class="food_section2">
+
+            <p>A - Z</p>
+
+            <div class="food-container-az">
+
+                <div class="food-card">
+                    <img src="puffs.jpg" alt="food image">
+                    <br><br>
+                    <b>Iya Sikirat Joint</b>
+                    <br>
+                    <span>Breakfast, lunch</span>
+                    <br><br>
+                    <div>
+                        <span>🛵 💲500</span>
+                        <input type="submit" class="cart_btn" value="+ add to cart">
+                    </div>
+
+                    <br><br>
+
+                    <button onclick="popUp()">from this vendor</button>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="food_section">
+            <p>Cheapest - Most expensive</p>
+
+            <div class="food-container-cheap">
+
+                <div class="food-card">
+                    <img src="puffs.jpg" alt="food image">
+                    <br><br>
+                    <b>Iya Sikirat Joint</b>
+                    <br>
+                    <span>Breakfast, lunch</span>
+                    <br><br>
+                    <div>
+                        <span>🛵 💲500</span>
+                        <input type="submit" class="cart_btn" value="+ add to cart">
+                    </div>
+
+                    <br><br>
+
+                    <button onclick="popUp()">from this vendor</button>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!--         
+        <div class="more_shop" id="shopUp" style="display: none;">
+
+            <b id="shop_name">Shop name</b>
+            <br>
+
+            <div class="shop-card">
+                <img src="puffs.jpg" alt="food image">
+                <br><br>
+                <span>Puff Puff</span>
+                <br><br>
+                <span>🛵 💲500</span>
+            </div>
+
+        </div> -->
+
+    </section>
+
+
+</body>
+
+<script src="../JS/food_options.js"></script>
+<script src="../JS/cart.js"></script>
+<script src="../bundle.js"></script>
+
+
+<footer class="footer-distributed">
+
+    <div class="footer-left">
+
+        <img src="/dist/resources/1708612987481.png" alt="FoodShoppi logo">
+      <h3>Food<span>Shoppi</span></h3>
+
+      <p class="footer-links">
+        <a href="/dist/pages/index.html" class="link-1">Home</a>
+        
+      </p>
+
+      <p class="footer-company-name">FoodShoppi © 2024</p>
+    </div>
+
+    <div class="footer-center">
+
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span>26 St. Navy Ave</span> Karshi, Abuja</p>
+      </div>
+
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>+234 812 091 5433</p>
+      </div>
+
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:support@company.com">fooshoppi@company.com</a></p>
+      </div>
+
+    </div>
+
+    <div class="footer-right">
+
+      <p class="footer-company-about">
+        <span>About FoodShoppi</span>
+        FOOD SHOPPI is a platform created to bridge the gap as well as streamline the process of ordering and getting fresh delicious foood from the comfort of your home.
+      </p>
+
+      <div class="footer-icons">
+
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+</html>
