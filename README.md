@@ -12,10 +12,15 @@ Secure Payment: Enjoy a secure payment process for completing orders with ease.
 **Made With**
 
 -HTML5
+
 -CSS
+
 -Javascript
+
 -Firebase
+
 -Webpack
+
 
 
 
